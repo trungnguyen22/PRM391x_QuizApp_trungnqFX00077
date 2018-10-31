@@ -1,5 +1,7 @@
 package com.example.dell.prm391x_quizapp_trungnqfx00077;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +17,9 @@ import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    public static String STRING_NAME_EXTRA = "STRING_NAME_EXTRA";
+    public static String STRING_AGE_EXTRA = "STRING_AGE_EXTRA";
+    public static String STRING_SCHOOL_EXTRA = "STRING_SCHOOL_EXTRA";
 
     TextView mMinuteTV, mSecondTV;
 
@@ -24,15 +29,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     CountDownTimer mCountDownTimer;
 
+    public static void openOuiz(Activity activity, String name, String age, String school) {
+        Intent intent = new Intent(activity, MainActivity.class);
+        intent.putExtra(MainActivity.STRING_NAME_EXTRA, name);
+        intent.putExtra(MainActivity.STRING_AGE_EXTRA, age);
+        intent.putExtra(MainActivity.STRING_SCHOOL_EXTRA, school);
+        activity.startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle(getString(R.string.app_name_official));
+        initData();
         bindViews();
         runTimer();
     }
 
+    /** Get intent */
+    private void initData() {
+        String name = getIntent().getStringExtra(STRING_NAME_EXTRA);
+        Toast.makeText(this, "Chào bạn " + name + ", chúc bạn làm bài Quiz tối", Toast.LENGTH_LONG).show();
+    }
+
+
+    /** Run a count down timer for the quiz */
     private void runTimer() {
         runOnUiThread(new Runnable() {
             @Override
@@ -83,6 +105,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    /** When user click on button for submitting, grade for the quiz */
     private void submitTheQuiz() {
         int count = 0;
         if (mFirstAnswerRB3.isChecked()) count += 1;

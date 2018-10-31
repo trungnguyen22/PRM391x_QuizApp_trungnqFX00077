@@ -9,7 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/quiz_bg" />
+        android:src="@drawable/quiz_bg"
+        tools:ignore="ContentDescription" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -23,7 +24,7 @@
             android:layout_centerHorizontal="true"
             android:text="@string/app_name_official"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
-            android:textColor="@android:color/black" />
+            android:textColor="@color/colorAccent" />
 
         <EditText
             android:id="@+id/mUserNameEdt"
@@ -33,7 +34,11 @@
             android:layout_marginLeft="@dimen/spacing_24"
             android:layout_marginTop="@dimen/spacing_24"
             android:layout_marginRight="@dimen/spacing_24"
-            android:hint="@string/username_hint" />
+            android:alpha="0.7"
+            android:background="@android:color/white"
+            android:hint="@string/username_hint"
+            android:padding="@dimen/padding_8"
+            tools:ignore="Autofill,TextFields" />
 
         <EditText
             android:id="@+id/mAgeEdt"
@@ -43,8 +48,12 @@
             android:layout_marginLeft="@dimen/spacing_24"
             android:layout_marginTop="@dimen/spacing_24"
             android:layout_marginRight="@dimen/spacing_24"
+            android:alpha="0.7"
+            android:background="@android:color/white"
             android:hint="@string/age_hint"
-            android:inputType="number" />
+            android:inputType="number"
+            android:padding="@dimen/padding_8"
+            tools:ignore="Autofill" />
 
         <EditText
             android:id="@+id/mSchoolEdt"
@@ -54,10 +63,15 @@
             android:layout_marginLeft="@dimen/spacing_24"
             android:layout_marginTop="@dimen/spacing_24"
             android:layout_marginRight="@dimen/spacing_24"
+            android:alpha="0.7"
+            android:background="@android:color/white"
             android:hint="@string/school_hint"
-            android:inputType="number" />
+            android:inputType="number"
+            android:padding="@dimen/padding_8"
+            tools:ignore="Autofill" />
 
         <Button
+            android:id="@+id/mStartQuizBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/mSchoolEdt"
