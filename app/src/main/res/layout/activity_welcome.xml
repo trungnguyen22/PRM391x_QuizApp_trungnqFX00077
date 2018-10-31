@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/quiz_bg" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/mAppNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/app_name_official"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/mUserNameEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mAppNameTV"
+            android:layout_marginLeft="@dimen/spacing_24"
+            android:layout_marginTop="@dimen/spacing_24"
+            android:layout_marginRight="@dimen/spacing_24"
+            android:hint="@string/username_hint" />
+
+        <EditText
+            android:id="@+id/mAgeEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mUserNameEdt"
+            android:layout_marginLeft="@dimen/spacing_24"
+            android:layout_marginTop="@dimen/spacing_24"
+            android:layout_marginRight="@dimen/spacing_24"
+            android:hint="@string/age_hint"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/mSchoolEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mAgeEdt"
+            android:layout_marginLeft="@dimen/spacing_24"
+            android:layout_marginTop="@dimen/spacing_24"
+            android:layout_marginRight="@dimen/spacing_24"
+            android:hint="@string/school_hint"
+            android:inputType="number" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mSchoolEdt"
+            android:layout_marginLeft="@dimen/spacing_24"
+            android:layout_marginTop="@dimen/spacing_24"
+            android:layout_marginRight="@dimen/spacing_24"
+            android:background="@color/colorPrimary"
+            android:text="@string/start_quiz"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

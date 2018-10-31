@@ -39,4 +39,8 @@
     <string name="submit">Submit</string>
     <string name="message_result">Điểm của bạn là: </string>
     <string name="vertical_dot">:</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="username_hint">Please enter your username</string>
+    <string name="age_hint">Enter your age</string>
+    <string name="school_hint">What is your school ?</string>
 </resources>
