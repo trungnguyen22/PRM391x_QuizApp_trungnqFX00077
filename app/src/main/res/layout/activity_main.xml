@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/mMinuteTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/padding_8"
+            android:textColor="@android:color/white"
+            tools:text="00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_8"
+            android:text="@string/vertical_dot"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/mSecondTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/padding_8"
+            android:textColor="@android:color/white"
+            tools:text="00" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_8">
+
+                <TextView
+                    android:id="@+id/mFirstQuestionTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_1"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/FirstAnswerRB1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answer_1a"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                    <RadioButton
+                        android:id="@+id/FirstAnswerRB2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answer_1b"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                    <RadioButton
+                        android:id="@+id/FirstAnswerRB3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answer_1c"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <!-- /. End of question 1 - SINGLE_CHOICE -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_8">
+
+                <TextView
+                    android:id="@+id/mSecondQuestionTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_2"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+
+                <EditText
+                    android:id="@+id/mSecondAnswerEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </LinearLayout>
+            <!-- /. End of question 2 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_8">
+
+                <TextView
+                    android:id="@+id/mThirdQuestionTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_3"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+
+                <CheckBox
+                    android:id="@+id/mThirdAnswerCB1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_3a" />
+
+                <CheckBox
+                    android:id="@+id/mThirdAnswerCB2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_3b" />
+
+                <CheckBox
+                    android:id="@+id/mThirdAnswerCB3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_3c" />
+
+                <CheckBox
+                    android:id="@+id/mThirdAnswerCB4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_3d" />
+
+            </LinearLayout>
+            <!-- /. End of question 3 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_8">
+
+                <TextView
+                    android:id="@+id/mFourthQuestionTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_4"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+
+                <EditText
+                    android:id="@+id/mFourthAnswerEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </LinearLayout>
+            <!-- /. End of question 4 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_8">
+
+                <TextView
+                    android:id="@+id/mFifthQuestionTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_5"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/mFifthAnswerRB1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answer_5a"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                    <RadioButton
+                        android:id="@+id/mFifthAnswerRB2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answer_5b"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                    <RadioButton
+                        android:id="@+id/mFifthAnswerRB3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answer_5c"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <!-- /. End of question 5 - SINGLE_CHOICE -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_8">
+
+                <TextView
+                    android:id="@+id/mSixthQuestionTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_6"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+
+                <EditText
+                    android:id="@+id/mSixthAnswerEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </LinearLayout>
+            <!-- /. End of question 6 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_8">
+
+                <TextView
+                    android:id="@+id/mSeventhQuestionTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_7"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+
+                <CheckBox
+                    android:id="@+id/mSeventhAnswerCB1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_7a" />
+
+                <CheckBox
+                    android:id="@+id/mSeventhAnswerCB2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_7b" />
+
+                <CheckBox
+                    android:id="@+id/mSeventhAnswerCB3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_7c" />
+
+                <CheckBox
+                    android:id="@+id/mSeventhAnswerCB4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_7d" />
+
+            </LinearLayout>
+            <!-- /. End of question 7 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_8">
+
+                <TextView
+                    android:id="@+id/mEightQuestionTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_8"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+
+                <EditText
+                    android:id="@+id/mEightAnswerEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </LinearLayout>
+            <!-- /. End of question 8 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_8">
+
+                <TextView
+                    android:id="@+id/mNinthQuestionTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_9"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/mNinthAnswerRB1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answer_9a"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                    <RadioButton
+                        android:id="@+id/mNinthAnswerRB2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answer_9b"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <!-- /. End of question 9 - SINGLE_CHOICE -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_8">
+
+                <TextView
+                    android:id="@+id/mTenthQuestionTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_10"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+
+                <EditText
+                    android:id="@+id/mTenthAnswerEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </LinearLayout>
+            <!-- /. End of question 10 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_8">
+
+                <Button
+                    android:id="@+id/mSubmitBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

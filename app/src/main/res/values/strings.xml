@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">PRM391x_QuizApp_trungnqFX00077</string>
+    <string name="app_name_official">Quiz App</string>
+    <string name="question_1">1. What is Deoxyribonucleic acid commonly referred to as?</string>
+    <string name="answer_1a">RNA</string>
+    <string name="answer_1b">CIA</string>
+    <string name="answer_1c">DNA</string>
+    <!-- Q2 -->
+    <string name="question_2">2. What process involves treating rubber with sulfur to harden it?</string>
+    <!-- Q3 -->
+    <string name="question_3">3. Name two different organelles of a eukaryotic cell.</string>
+    <string name="answer_3a">Ribosome</string>
+    <string name="answer_3b">Plasmids</string>
+    <string name="answer_3c">Golgi apparatus</string>
+    <string name="answer_3d">Diploid</string>
+    <!-- Q4 -->
+    <string name="question_4">4. This word describes the force that pulls objects to the middle of the earth?</string>
+    <!-- Q5 -->
+    <string name="question_5">5. What type of trees yield the resin used to produce turpentine?</string>
+    <string name="answer_5a">Palm trees</string>
+    <string name="answer_5b">Pine trees</string>
+    <string name="answer_5c">Oak trees</string>
+    <!-- Q6 -->
+    <string name="question_6">6. Cumulus and Cirrus are types of what?</string>
+    <!-- Q7 -->
+    <string name="question_7">7. Which two planets have one or more moons?</string>
+    <string name="answer_7a">Ceres</string>
+    <string name="answer_7b">Mercury</string>
+    <string name="answer_7c">Earth</string>
+    <string name="answer_7d">Pluto</string>
+    <!-- Q8 -->
+    <string name="question_8">8. Where in the human body would you find the scaphoid bone?</string>
+    <!-- Q9 -->
+    <string name="question_9">9. Which grow upwards Stalactites or Stalagmites?</string>
+    <string name="answer_9a">Stalactites</string>
+    <string name="answer_9b">Stalagmites</string>
+    <!-- Q10 -->
+    <string name="question_10">10. What process involves heating an ore to obtain a metal?</string>
+    <string name="submit">Submit</string>
+    <string name="message_result">Điểm của bạn là: </string>
+    <string name="vertical_dot">:</string>
+</resources>
